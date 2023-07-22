@@ -3,5 +3,7 @@
 /pkg/
 /tmp/
 /bin/
+/log/
 /test/dummy/
 /coverage/
+Gemfile.lock

@@ -2,8 +2,7 @@
 
 module Altair
   module Rails
-    # Returns the currently loaded version of Active Experiment as a
-    # +Gem::Version+.
+    # Returns the currently loaded version as a +Gem::Version+.
     def self.version
       Gem::Version.new(VERSION::STRING)
     end
