@@ -51,10 +51,12 @@ end
 
 ## License
 
-Active Experiment is released under the MIT license:
+This project is released under the MIT license:
 
 * https://opensource.org/licenses/MIT
 
 Copyright 2023 [jejacks0n](https://github.com/jejacks0n)
 
 ## Make Code Not War
+
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
