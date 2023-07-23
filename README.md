@@ -1,8 +1,11 @@
 # Altair Rails - The Altair GraphQL Client for Rails
 
-[![Gem Version](https://badge.fury.io/rb/altair-rails.svg)](https://badge.fury.io/rb/altair-rails)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Maintainability](https://api.codeclimate.com/v1/badges/22128c5c828a8eed6f95/maintainability)](https://codeclimate.com/github/jejacks0n/altair-rails/maintainability)
+[![Gem Version](https://img.shields.io/gem/v/altair-rails.svg?label=gem%20version)](https://rubygems.org/gems/altair-rails)
+[![MIT License](https://img.shields.io/github/license/jejacks0n/altair-rails.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/jejacks0n/altair-rails/ci.yml.svg?label=build%20status)](https://github.com/jejacks0n/altair-rails/actions/workflows/ci.yml)
+[![Maintainability](https://img.shields.io/codeclimate/coverage-letter/jejacks0n/altair-rails.svg?label=maintainability)](https://codeclimate.com/github/jejacks0n/altair-rails/maintainability)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/jejacks0n/altair-rails.svg?label=test%20coverage)](https://codeclimate.com/github/jejacks0n/altair-rails/test_coverage)
+[![RubyGems](https://img.shields.io/gem/dt/altair-rails.svg?label=rubygems%20downloads)](https://rubygems.org/gems/altair-rails)
 
 Altair Rails is a Rails engine that provides a mountable endpoint for the [Altair GraphQL Client](https://altairgraphql.dev/).
 
@@ -48,6 +51,14 @@ Altair::Rails.configure do |config|
   config.altair_options = {}
 end
 ```
+
+## Similar Projects
+
+I created this project after battling GraphQL subscriptions, and GraphiQLs lack of support for ActionCable.
+
+That being said, there are still great projects worth checking out:
+
+- [graphiql-rails](https://github.com/rmosolgo/graphiql-rails) - A Rails engine that provides a mountable endpoint for GraphiQL.
 
 ## License
 
