@@ -5,12 +5,15 @@ module Altair
     class Engine < ::Rails::Engine
       isolate_namespace Altair::Rails
 
-      conf = Altair::Rails.configuration
-      opts = { at: conf.mount_at, as: :altair }
+      routes { root to: Altair::Rails.configuration.altair_template }
 
-      routes { root to: conf.altair_template }
-
-      config.after_initialize { |app| app.routes.prepend { mount(Engine, opts) } } if conf.mount_at.present?
+      if Altair::Rails.configuration.mount_at.present?
+        config.after_initialize do |app|
+          app.routes.prepend do
+            mount(Engine, at: Altair::Rails.configuration.mount_at, as: :altair)
+          end
+        end
+      end
     end
   end
 end
