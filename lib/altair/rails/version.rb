@@ -8,10 +8,10 @@ module Altair
     end
 
     module VERSION
-      MAJOR = 0
+      MAJOR = 5
       MINOR = 0
-      TINY  = 4
-      PRE   = nil
+      TINY  = 28
+      PRE   = 1
 
       STRING = [MAJOR, MINOR, TINY, PRE].compact.join(".")
     end
