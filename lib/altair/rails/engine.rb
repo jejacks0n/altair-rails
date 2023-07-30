@@ -7,11 +7,10 @@ module Altair
 
       routes { root to: Altair::Rails.configuration.altair_template }
 
-      if Altair::Rails.configuration.mount_at.present?
-        config.after_initialize do |app|
-          app.routes.prepend do
-            mount(Engine, at: Altair::Rails.configuration.mount_at, as: :altair)
-          end
+      config.after_initialize do |app|
+        app.routes.prepend do
+          mount_path = Altair::Rails.configuration.mount_at
+          mount(Engine, at: mount_path, as: :altair) if mount_path.present?
         end
       end
     end
